@@ -1,21 +1,21 @@
-
-import './App.css';
+import React from "react";
+import Weather from "./components/Weather";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <div className='container'>
-        <h2>Weather App</h2>
+      <div className="container">
+        <Weather />
+
         <footer>
-          This project was coded by Ojo Eniola and it is {" "}
-        <a
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          open sourced
-        </a>
-      </footer>
+          This project was coded by Ojo Eniola and it is{" "}
+          <a
+            href="https://github.com/ojoeniola/my-first-react-app"
+            target="_blank" rel="noreferrer">
+            open sourced
+          </a>
+        </footer>
       </div>
     </div>
   );
