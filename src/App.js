@@ -17,7 +17,14 @@ function App() {
           >
             open sourced
           </a>{" "}
-          
+          and it is {" "}
+          <a
+            href="https://eniola-first-react-app.netlify.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            hosted on Netlify
+          </a>{" "}
         </footer>
       </div>
     </div>
