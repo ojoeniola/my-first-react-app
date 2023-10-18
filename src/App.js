@@ -12,17 +12,13 @@ function App() {
           This project was coded by Ojo Eniola and it is{" "}
           <a
             href="https://github.com/ojoeniola/my-first-react-app"
-            target="_blank" rel="noreferrer">
-            open sourced
-          </a> {" "}
-          and {" "}
-          <a 
-          href="https://eniola-first-react-app.netlify.app/"
-          target="_blank"
-          rel="nonreferrer"
+            target="_blank"
+            rel="noreferrer"
           >
-            hosted on Netlify
-          </a>
+            open sourced
+          </a>{" "}
+          and{" "}
+          
         </footer>
       </div>
     </div>
