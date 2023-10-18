@@ -17,7 +17,6 @@ function App() {
           >
             open sourced
           </a>{" "}
-          and{" "}
           
         </footer>
       </div>
