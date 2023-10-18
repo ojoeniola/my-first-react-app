@@ -14,6 +14,14 @@ function App() {
             href="https://github.com/ojoeniola/my-first-react-app"
             target="_blank" rel="noreferrer">
             open sourced
+          </a> {" "}
+          and {" "}
+          <a 
+          href="https://eniola-first-react-app.netlify.app/"
+          target="_blank"
+          rel="nonreferrer"
+          >
+            hosted on Netlify
           </a>
         </footer>
       </div>
