@@ -17,6 +17,16 @@ import WeatherForecastDay from "./WeatherForecastDay";
     setForecast(response.data.daily);
     setLoaded(true);
   }
+
+  function load() {
+     let apiKey = "7059cb165caa3316bff682d263a01b1e";
+     let longitude = props.coordinates.lon;
+     let latitude = props.coordinates.lat;
+     let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
+
+     axios.get(apiUrl).then(handleResponse);
+      
+  }
   
   if(loaded) {
     console.log(forecast);
@@ -40,12 +50,8 @@ import WeatherForecastDay from "./WeatherForecastDay";
     );
   
   }else {
-      let apiKey = "7059cb165caa3316bff682d263a01b1e";
-      let longitude = props.coordinates.lon;
-      let latitude = props.coordinates.lat;
-      let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
-
-      axios.get(apiUrl).then(handleResponse);
+     load();
+      
       return null;
 
   }
